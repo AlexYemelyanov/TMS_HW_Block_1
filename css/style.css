@@ -13,7 +13,7 @@ body {
 h2 {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 2em;
     line-height: 42px;
     text-transform: uppercase;
 }
@@ -21,7 +21,7 @@ h2 {
 h3 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 1.67em;
     line-height: 41px;
 }
 
@@ -57,7 +57,7 @@ input, button, select, text-area {
 
 .title h2 {
     font-weight: 400;
-    font-size: 36px;
+    font-size: 2em;
     line-height: 42px;
     margin-bottom: 55px;
 }
@@ -71,7 +71,7 @@ input, button, select, text-area {
 
 .title__descr {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 0.78em;
     line-height: 16px;
 }
 
@@ -116,7 +116,8 @@ input, button, select, text-area {
 /* PROMO */
 
 .promo {
-    height: 950px;
+
+    min-height: 950px;
     background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(37, 43, 73, 0.8)), url(../img/bg_main.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -129,8 +130,11 @@ input, button, select, text-area {
     justify-content: space-between;
 }
 
+
+
 .title-promo {
     text-align: left;
+    width: 55.8%;
 }
 
 .title-white {
@@ -151,7 +155,7 @@ input, button, select, text-area {
 
 .title-white h1 {
     font-weight: 500;
-    font-size: 48px;
+    font-size: 2.57em;
     line-height: 56px;
     margin-bottom: 55px;
 }
@@ -164,7 +168,7 @@ input, button, select, text-area {
 
 .title__descr-white {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1em;
     line-height: 21px;
     margin-bottom: 32px;
 }
@@ -177,6 +181,11 @@ input, button, select, text-area {
     width: 270px;
     height: 58px;
     border: 1px solid #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    transition: 1s;
 }
 
 .title__link:hover {
@@ -187,7 +196,7 @@ input, button, select, text-area {
 .promo__form {
     display: flex;
     flex-direction: column;
-    width: 470px;
+    width: 39.2%;
     height: 450px;
     background: #ffffff;
     border: 0px solid #000;
@@ -199,7 +208,7 @@ input, button, select, text-area {
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 1.33em;
     line-height: 33px;
     color: #333333;
     margin-bottom: 45px;
@@ -224,7 +233,12 @@ input, button, select, text-area {
     height: 38px;
     border: none;
     border-bottom: 1px solid #BDBDBD;
+    transition: 1s all;
+}
 
+.promo__form input:focus-visible {
+    box-shadow: 19px 23px 29px -11px rgba(173, 173, 173, 0.8);
+    outline: none;
 }
 
 .promo__form input[type="password"] {
@@ -232,6 +246,7 @@ input, button, select, text-area {
 }
 
 .form__btn {
+    font-family: 'Open Sans', sans-serif;
     width: 100%;
     height: 60px;
     border: none;
@@ -242,6 +257,7 @@ input, button, select, text-area {
     color: #ffffff;
     border-end-end-radius: 10px;
     border-end-start-radius: 10px;
+    transition: 1s all;
 }
 
 .form__btn:hover {
@@ -249,8 +265,9 @@ input, button, select, text-area {
 }
 
 .social {
-    height: 140px;
+    height: 100%;
     background: #F8EFEF;
+    padding: 20px 0;
 }
 
 .social .wrapper {
@@ -270,13 +287,14 @@ input, button, select, text-area {
 .social__title {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 1.33em;
     line-height: 33px;
+    margin-bottom: 18px;
 }
 
 .social__descr {
-    font-weight: 400;
-    font-size: 18px;
+    font-size: 1em;
+    line-height: 21px;
 }
 
 .social__items {
@@ -287,12 +305,16 @@ input, button, select, text-area {
 }
 
 .social__item {
-    width: 70px;
-    height: 70px;
+    width: 10%;
+    aspect-ratio: 1/1;
     display: flex;
     align-items: center;
     justify-content: space-around;
     transition-duration: 0.5s;
+}
+
+.social__item-facebook {
+    width: 5%;
 }
 
 .social__item path {
@@ -326,8 +348,9 @@ input, button, select, text-area {
 
 
 .awesome__item h3 {
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 1.33em;
     line-height: 33px;
     margin-bottom: 49px;
 }
@@ -429,13 +452,13 @@ background-color: #F5F5F5;
 .pricing__descr {
     color: rgba(255, 255, 255, 0.5);
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1em;
     line-height: 21px;
 }
 
 .pricing__component {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1em;
     line-height: 21px;
     text-transform: capitalize;
     color: #86878B;
@@ -481,7 +504,7 @@ background-color: #F5F5F5;
     border-radius: 10px;
     padding: 38px 0;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1em;
     line-height: 21px;
     color: #86878B;
     position: relative;
@@ -509,17 +532,44 @@ background-color: #F5F5F5;
     align-items: center;
 }
 
+.customers__person img{
+    width: 19%;
+    height: 21%;
+}
+
 .customers__person h3 {
+    font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 1.33em;
     line-height: 33px;
     margin-bottom: 15px;
 }
 
 .customers__person p {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1em;
     line-height: 21px;
+}
+
+.customers__dotts {
+    width: 37.5%;
+    height: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    display: none;
+}
+
+.customers__round {
+    height: 9px;
+    width: 9px;
+    border: 1px solid #86878B;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.customers__round-active {
+    background-color: #86878B;
 }
 
 /* AXURE */
@@ -535,7 +585,7 @@ background-color: #F5F5F5;
 
 .axure h2 {
     font-weight: 400;
-    font-size: 36px;
+    font-size: 2em;
     line-height: 42px;
     text-transform: uppercase;
 }
@@ -543,6 +593,7 @@ background-color: #F5F5F5;
 .axure .title-white {
     justify-content: center;
     align-items: center;
+
 }
 
 .axure .title__link-default {
@@ -554,7 +605,7 @@ background-color: #F5F5F5;
 
 .contact__form-grid {
     display: grid;
-    height: 210px;
+    height: 288px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     margin-bottom: 50px;
@@ -565,7 +616,6 @@ background-color: #F5F5F5;
 .contact__text-grid {
     grid-column: 2;
     grid-row: 1 / span 3;
-    text-align: top;
     resize: none;
 }
 
@@ -592,7 +642,7 @@ input[type="text"]::-webkit-input-placeholder, input[type="email"]::-webkit-inpu
     font-weight: 400;
     font-size: 14px; 
     line-height: 19px;
- }/*Для какого браузера?? Chrome, Opera, Safari*/
+ }
 input[type="text"]::-ms-input-placeholder, input[type="email"]::-ms-input-placeholder, input[type="password"]::-ms-input-placeholder, textarea[name="message"]::-ms-textarea-placeholder { 
     color: #BDBDBD;
     font-family: 'Open Sans', sans-serif;
@@ -615,8 +665,9 @@ input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="p
     line-height: 19px; 
 } /*Для какого браузера?? Chrome*/
 
-.contact__name-grid:focus, .contact__email-grid:focus, .contact__pass-grid:focus, .contact__text-grid:focus{
+.contact__name-grid:focus-visible, .contact__email-grid:focus-visible, .contact__pass-grid:focus-visible, .contact__text-grid:focus-visible{
     box-shadow: 19px 23px 29px -11px rgba(173, 173, 173, 0.8);
+    outline: none;
 }
 
 .contact__btn {
@@ -651,16 +702,21 @@ input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="p
 }
 
 .footer__social {
+    width: 44%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin-bottom: 28px;
 }
 
 .footer__copy {
     color: rgba(255, 255, 255, 0.5);
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1em;
     line-height: 21px;
     text-align: center;
 }
+
+
 

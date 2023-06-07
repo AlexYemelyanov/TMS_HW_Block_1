@@ -1,8 +1,295 @@
-@media (max-width: 1024) {
-    body{
-        background-color: black;
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 14px;
     }
-    h3 {
-        font-size: 20px;
+
+    .title {
+        text-align: center;
+        margin-bottom: 40px;
     }
+
+    .title h2 {
+        line-height: 28px;
+        margin-bottom: 55px;
+    }
+
+    .title__separator {
+        width: 142px;
+    }
+
+    .title__descr {
+        line-height: 16px;
+    }
+
+    .title-white h1 {
+        text-align: left;
+        line-height: 42px;
+    }
+
+    .title__descr-white {
+        line-height: 16px;
+    }
+
+    .title__separator-white {
+        width: 115px;
+    }
+
+    .title__link {
+        width: 183px;
+        height: 50px;
+    }
+
+    .promo__form {
+        width: 398px;
+        height: 450px;
+    }
+
+    .promo__form input{
+        width: 298px;
+        height: 38px;
+    }
+
+
+    .social__title {
+        line-height: 25px;
+    }
+
+    .social__descr {
+        line-height: 16px;
+    }
+
+
+    .awesome__item {
+        width: calc(100%/3 - 20px);
+    }
+
+    .awesome__item h3 {
+        line-height: 25px;
+    }
+
+    .awesome__img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .pricing__item {
+        width: calc(100%/3 - 20px);
+    }
+
+    .pricing__title, .pricing__descr, .pricing__component {
+        height: 45px;
+    }
+
+    .pricing__price {
+        height: 89px;
+    }
+
+    .customers__item {
+        width: calc(100%/3 - 20px);
+    }
+
+    .customers__descr {
+        line-height: 16px;
+    }
+
+    .customers__person h3 {
+        line-height: 25px;
+    }
+
+    .customers__person p {
+        line-height: 16px;
+    }
+
+    .axure .title__link-default {
+        width: 318px;
+    }
+
+
+    .contact__btn {
+        width: 318px;
+    }
+
+
+    .footer__copy {
+        line-height: 16px;
+    }
+
+}
+
+@media screen and (max-width: 880px) {
+    .customers__item {
+        width: calc(100%/2 - 30px);
+    }
+
+    .customers__item-active {
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .customers__item-hidden {
+        display: none;
+    }
+
+    .customers__dotts {
+        display: flex;
+    }
+
+
+    .social__info {
+        width: calc(100% - 40px);
+    }
+
+    .social .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+    }
+
+    .social__descr {
+        margin-bottom: 32px;
+    }
+
+    .footer__social {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .contact__form-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        column-gap: 0;
+    }
+
+    .contact__text-grid {
+        grid-column: 1;
+        grid-row: 4 / span 3;
+        text-align: top;
+        resize: none;
+        margin-bottom: 40px;
+    }
+
+    .contact__name-grid, .contact__email-grid, .contact__pass-grid {
+        height: 38px;
+    }
+
+    .contact__btn {
+        width: 288px;
+    }
+
+
+    .promo .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title-promo {
+        text-align: center;
+        width: 100%;
+    }
+
+    .title-white h1 {
+        text-align: center;
+    }
+
+    .title-white {
+        align-items: center;
+    }
+
+    .title__separator-white {
+        width: 134px;
+    }
+
+    .title__link {
+        width: 288px;
+        height: 50px;
+    }
+
+    .awesome__items {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .awesome__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: calc(100%/2 - 30px);
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .social__items {
+        width: 70%;
+    }
+    
+    .footer__social {
+        width: 70%;
+    }
+    
+}
+
+@media screen and (max-width: 560px) {
+    .customers__item {
+        width:calc(100% - 50px);
+    }
+
+    .customers__item-secHidden {
+        display: none;
+    }
+
+     .pricing__item {
+        width: calc(100% - 30px);
+        margin-bottom: 30px;
+    }
+
+    .pricing__items {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    
+}
+
+@media screen and (max-width: 480px) {
+    .wrapper {
+        padding: 0 5px;
+    }
+
+    .awesome__items {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .awesome__item {
+        width: calc(100% - 10px);
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .social__items {
+        width: 100%;
+    }
+
+    
+
+    .axure .title__link-default {
+        width: 287px;
+        height: 50px;
+    }
+    
+    .footer__social {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    
 }
