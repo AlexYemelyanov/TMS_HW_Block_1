@@ -90,6 +90,10 @@ input, button, select, text-area {
     height: 100%;
 }
 
+.header__nav-burger, .header__burger {
+    display: none;
+}
+
 .header__items {
     display: flex;
     justify-content: space-around;
