@@ -379,7 +379,7 @@
     }
 
     .header__burger input:checked ~ .header__nav-burger {
-        right: -75px;
+        right: -70px;
     }
 
 
